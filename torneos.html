@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/beb587f537.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Los Alamos</title>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top affix">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li>
+                <a class="nav-link " href="index.html">Inicio</a>
+              </li>
+              <li>
+                <a class="nav-link active" href="./torneos">Torneos</a>
+              </li>
+              <li>
+                <a class="nav-link " href="./expensas">Informes</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./galeria.html">Galeria</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+          <button class="switch" id="switch">
+            <span> <i class="fa-solid fa-sun"></i></span>
+            <span> <i class="fa-solid fa-moon"></i> </span>
+          </button>
+        </div>
+    </nav>
+    <div class="title">
+      <h1>Torneos</h1>
+  </div>
+
+  <div class="row row_content">
+      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 barra_lateral">
+          <ul>
+              <li>Mayores</li>
+              <li>Menores</li>
+              <li>Partidos</li>
+              <li>Reglamentos</li>
+          </ul>
+      </div>
+      <div class="torneoActual">
+          <h2 style="color:green"><b>Torneo Actual</b></h2>
+          <!-- <label for="select_categorias">Categorias</label>
+          <select id="select_categorias">
+              <option disabled selected>-Seleccionar Categoria-</option>
+              <option value="Play Off Julio">Parejas</option>
+              <option value="Play Off Julio">Solitario</option> -->
+          </select>
+          <div id="tabla_posiciones">
+              <h2 class="float-left">Posiciones</h2>
+              <div class="table-responsive">
+                  <table class="table table-hover">
+                      <thead>
+                          <tr>
+                            <th scope="posicion" data-sort="posicion">Posicion</th>
+                            <th scope="sort" data-sort="equipo">Equipo</th>
+                            <th scope="sort" data-sort="puntos">Puntos</th>
+                          </tr>
+                        </thead>
+                        <tbody class="list body_posicionesTenis" id="posiciones">
+                          <tr>
+                            <td class="posicion">1</td>
+                            <td class="equipo">Academicos</td>
+                            <td class="puntos">6</td>
+                          </tr>
+                        </tbody>
+                    </table>
+              </div>
+              <button id="btnAbrirModal" class="btn-abrir-popup">
+                Ingresar Puntos
+              </button>
+          </div>
+          <div class="overlay_tor" id="overlay_tor">
+            <div class="popup" id="modal"> 
+                <a href="#" id="btn-close" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                <h3 class="text-center">Ingresar Partido</h3>
+                <form action="" id="form" class="text-center">
+                    <div class="contenedor-inputs">
+                      <input type="number" id="numero" value="" placeholder="Id de equipo" required>
+                      <input type="number" id="puntos" value="" placeholder="puntos" required>
+                    </div>
+                    <button id="boton"class="btn btn-success" type="submit" onclick="cambiar();">
+                      Agregar cambios
+                    </button>
+                </form>
+        </div>
+          </div>
+      </div>
+  </div>
+
+
+
+
+
+    <footer>
+        <div class="footer">
+        <div class="iconos">
+            <ul>
+                <li><i class="fa-brands fa-youtube"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-solid fa-envelope"></i></li>
+            </ul>
+        </div>
+        <div class="desarrollo">
+        <a href="">        
+            <p>
+            Karen Teper | Desarrolladora Front end
+        </p>
+        </a>
+    </div>
+    </div>
+
+    </footer>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/mainTorneos.js"></script>
+</body>
+</html>
